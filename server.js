@@ -25,4 +25,5 @@ app.get("/", (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
+  console.log("check", process.env.DB_PORT, " ", process.env.DB_HOST, " ", process.env.DB_USER, " ", process.env.DB_NAME);
 });
